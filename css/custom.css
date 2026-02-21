@@ -1,0 +1,28 @@
+/* UBI-Sense Lab: centered container + left-aligned content (Ananke/Tachyons) */
+
+/* 本文領域を常に左揃えに（余白＝中央配置は維持） */
+main,
+main article,
+main .measure,
+main .nested-copy-line-height,
+main .nested-links {
+text-align: left !important;
+}
+
+/* Tachyons のセンタリング系クラスを “本文内だけ” 無効化 */
+main .tc,
+main .center,
+main .tc-ns,
+main .center-ns,
+main .tc-l,
+main .center-l {
+text-align: left !important;
+}
+
+/* 念のため：大画面時のブレークポイントでも確実に勝つ /
+@media screen and (min-width: 30em) { / ns /
+main .tc-ns, main .center-ns { text-align: left !important; }
+}
+@media screen and (min-width: 60em) { / l */
+main .tc-l, main .center-l { text-align: left !important; }
+}
